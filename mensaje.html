@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <style>
+        /* Fondo de la página */
+        body {
+            background: linear-gradient(to right, #f6d365, #fda085); /* Gradiente bonito */
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Contenedor del mensaje */
+        .message-container {
+            background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FFD700; /* Color dorado */
+            margin: 0;
+            animation: bounce 1s infinite;
+            animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        /* Efecto de animación de escritura */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Efecto de parpadeo del cursor */
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Estilo del subtítulo o mensaje */
+        .sub-message {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        /* Media Queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Reducir tamaño del texto */
+            }
+
+            .sub-message {
+                font-size: 1rem; /* Ajustar tamaño del texto */
+            }
+
+            .message-container {
+                padding: 15px; /* Reducir padding para pantallas más pequeñas */
+            }
+
+            .celebration-image {
+                width: 100%; /* Asegura que la imagen ocupe el máximo espacio disponible */
+                height: auto; /* Mantiene la proporción de la imagen */
+                margin-top: 20px; /* Espacio entre el texto y la imagen */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Amorcito mio</h1>
+        <p class="sub-message">
+            Tu eres esa persona con la quiero tener millones de aventuras con la que quiero bailar en la cocina
+            besarnos bajo la lluvia preparar el desayuno correr a casa despues de un largo dia
+            tu eres con quien quiero reir, llorar y enamorarnos una y otra vez
+            tu eres mi persona favorita cielito.<br>
+            Desde que llegaste a mi vida, todo tiene más sentido.
+            Tu amor me hace sentir completa, segura y feliz.
+            No hay un solo día en el que no agradezca por tenerte a mi lado,
+            por tu paciencia, tu ternura y por la manera en la que me haces sentir amada.
+            Eres mucho más que mi pareja, eres mi apoyo, mi confidente,
+            mi mejor amigo y el amor que siempre soñé. Te amo con todo lo que soy,
+            y quiero seguir construyendo este camino contigo, día a día, con amor, respeto y complicidad.
+        </p>
+        <img id="foto" class="celebration-image" src="/img/foto.PNG" alt="Celebración">
+    </div> 
+
+    
+
+</body>
+</html>
